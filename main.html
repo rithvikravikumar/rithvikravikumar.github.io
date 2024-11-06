@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithvik's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color: #f5f5f5;
+        }
+        body {
+            background-color: #121212;
+            line-height: 1.6;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #1c1c1c;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #f5f5f5;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* About Section */
+        .section {
+            padding: 4rem 2rem;
+        }
+        .about {
+            background: #2b2b2b;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .about h2 {
+            color: #00bcd4;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .skill-item {
+            background: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Project Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-item {
+            background: #2e2e2e;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-info h2 {
+            color: #00bcd4;
+        }
+        .contact-info a {
+            display: inline-block;
+            background-color: #00bcd4;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            text-align: center;
+            background: #1c1c1c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div>Rithvik Ravikumar</div>
+        <div>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hey, I'm Rithvik</h1>
+        <p>Aspiring coder, F1 enthusiast, and tech lover.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I’m a student at FIITJEE Global School, aiming for IIT-Chennai. My main focus is studying, especially in the fields of physics and computer science. Outside of academics, I love playing the guitar, programming, and diving into tech. When I’m not coding or studying, I’m usually watching F1 races or YouTube</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">Arch Linux</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">Visual Studio Code</div>
+            <div class="skill-item">Linux</div>
+            <div class="skill-item">Git & GitHub</div>
+            <div class="skill-item">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Automated Installer Script</h3>
+                <p>A script to automate Linux setup and dotfile installation.</p>
+            </div>
+            <div class="project-item">
+                <h3>Physics-Based Simulations</h3>
+                <p>Small physics projects simulating mechanics concepts.</p>
+            </div>
+            <div class="project-item">
+                <h3>3D Games</h3>
+                <p>I have honed my skills with making a minecraft clone</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you'd like to chat about tech, F1, or anything else!</p>
+            <a style="text-decoration: none; color: white;" href="mailto:rithvik@example.com">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rithvik | Racing through life one script at a time.</p>
+    </footer>
+
+</body>
+</html>
